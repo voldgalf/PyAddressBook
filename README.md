@@ -1,10 +1,10 @@
-# PyAddressBook
+# 📕 PyAddressBook
 
-PyAddressBook is a simple, structured yet expandable, Python library for address books.
+PyAddressBook is a simple flexible Python library for address books
 
 ## Installing
 
-PyAddressBook can be installed by [pip](https://pip.pypa.io/en/stable/).
+PyAddressBook can be installed by [pip](https://pip.pypa.io/en/stable/)
 
 ```bash
 pip install pyaddressbook
