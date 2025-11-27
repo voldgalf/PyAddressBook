@@ -9,25 +9,25 @@ myAddressBook = AddressBook()
 ```
 
 ### Creating contacts
-The `BookContact` class stores all the contact information.
 
-It is called as `BookContact(ContactName)`
+Call `BookContact(ContactName)` to create an instance of `BookContact` which stores information for an individual contact.
 
 ```python
 myContact = BookContact("John Doe")
 ```
-#### Adding Info
+
+#### Adding information to contacts
 
 To add additional information to the contact you must call `addInformation(Name, Value)`
 
 > [!TIP]
-> The `Value` paramter can be numbers, string, or objects
+> The `Value` parameter is not limited to strings, it can be integers, objects, or even other library data structures!
 
 ```python
 myContact.addInformation("Address", "123 Main Street")
 ```
 
-#### Retrieving Info
+#### Retrieving information from contacts
 
 To retrieve information from the contact, call `getInformation(Name)`.
 
@@ -42,8 +42,6 @@ To add a contact to the address book, call `addContact(contact)`
 Below is an example:
 
 ```python
-myAddressBook = AddressBook()
-
 newContact = BookContact("John Doe")
 
 myAddressBook.addContact(newContact)
@@ -59,5 +57,5 @@ myAddressBook.save(filePath)
 To load your address book, call the `AddressBook.load(fileName)` function
 
 ```python
-myAddressBook.load(FileName)
+myAddressBook.load(fileName)
 ```
