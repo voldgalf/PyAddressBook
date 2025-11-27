@@ -3,7 +3,7 @@ import os
 
 REGULAR_PROPERTIES = ["First Name", "Last Name", "Address", "Phone"]
 
-class BookRecord:
+class BookContact:
     
     def __init__(self, fullName):
         """Class docstrings go here."""
@@ -30,9 +30,9 @@ class AddressBook:
     def __init__(self):
         
         self.records: List[BookRecord] = []
-    def getRecords(self):
+    def getContacts(self):
         return self.records
-    def addRecord(self, BookRecord):
+    def addContact(self, BookRecord):
         
         self.records.append(BookRecord)
         
