@@ -4,7 +4,7 @@ PyAddressBook is a simple, structured yet expandable, Python library for address
 
 ## Installing
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+PyAddressBook can be installed by [pip](https://pip.pypa.io/en/stable/).
 
 ```bash
 pip install pyaddressbook
