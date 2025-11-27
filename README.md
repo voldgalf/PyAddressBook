@@ -1,61 +1,49 @@
+# PyAddressBook
+
+PyAddressBook is a simple, structured yet expandable, Python library for address books.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install pyaddressbook
+```
 ## Usage
 
-### Initialization
-
-To create your address book, create a `AddressBook` instance like below:
+### Creating and Saving Address Books
 
 ```python
+# Create an AddressBook instance
 myAddressBook = AddressBook()
-```
 
-### Creating contacts
-
-Call `BookContact(ContactName)` to create an instance of `BookContact` which stores information for an individual contact.
-
-```python
+# Create a BookContact instance
 myContact = BookContact("John Doe")
-```
 
-#### Adding information to contacts
-
-To add additional information to the contact you must call `addInformation(Name, Value)`
-
-> [!TIP]
-> The `Value` parameter is not limited to strings, it can be integers, objects, or even other library data structures!
-
-```python
+# Add information to BookContact instance
 myContact.addInformation("Address", "123 Main Street")
+
+# Add BookContact instance to AddressBook
+myAddressBook.addContact(myContact)
+
+# Save current AddressBook to file
+myAddressBook.save("myAddressBook.file")
 ```
 
-#### Retrieving information from contacts
-
-To retrieve information from the contact, call `getInformation(Name)`.
+### Loading Saved Address Books
 
 ```python
-someVariable = myContact.getInformation("Address")
+# Create an AddressBook instance
+myAddressBook = AddressBook()
+
+# Load AddressBook file to AddressBook instance
+myAddressBook.load("myAddressBook.file")
+
+# Retrieve all contacts from AddressBook instance
+allContacts = myAddressBook.getContacts()
+
 ```
 
-### Adding contacts
+## License
 
-To add a contact to the address book, call `addContact(contact)`
-
-Below is an example:
-
-```python
-newContact = BookContact("John Doe")
-
-myAddressBook.addContact(newContact)
-```
-
-### Saving/Loading your address book
-To save your address book, call `save(filePath)`
-
-```python
-myAddressBook.save(filePath)
-```
-
-To load your address book, call the `AddressBook.load(fileName)` function
-
-```python
-myAddressBook.load(fileName)
-```
+[MIT](https://choosealicense.com/licenses/mit/)
