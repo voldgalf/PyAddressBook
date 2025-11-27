@@ -9,12 +9,12 @@ myAddressBook = AddressBook()
 ```
 
 ### Creating contacts
-The `BookRecord` class stores all the contact information.
+The `BookContact` class stores all the contact information.
 
-It is called as `BookRecord(ContactName)`
+It is called as `BookContact(ContactName)`
 
 ```python
-myContact = BookRecord("John Doe")
+myContact = BookContact("John Doe")
 ```
 #### Adding Info
 
@@ -44,7 +44,7 @@ Below is an example:
 ```python
 myAddressBook = AddressBook()
 
-newContact = BookRecord("John Doe")
+newContact = BookContact("John Doe")
 
 myAddressBook.addContact(newContact)
 ```
