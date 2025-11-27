@@ -8,18 +8,22 @@ To create your address book, create a `AddressBook` instance like below:
 myAddressBook = AddressBook()
 ```
 
-### Adding contacts
-The `BookRecord` class stores all the contact information
+### Creating contacts
+The `BookRecord` class stores all the contact information.
 
-The contact's full name is required to initialize 
+> [!IMPORTANT]
+> The contact's full name is required to initialize the class itself.
 
 ```python
 myContact = BookRecord("John Doe")
 ```
-
 #### Adding Info
 
 To add additional information to the contact you must call `addInformation(Name, Value)`
+
+> [!TIP]
+> The `Value` paramter can be numbers, string, or objects
+
 ```python
 myContact.addInformation("Address", "123 Main Street")
 ```
@@ -32,7 +36,21 @@ To retrieve information from the contact, call `getInformation(Name)`.
 someVariable = myContact.getInformation("Address")
 ```
 
-### Saving/Loading
+### Adding contacts
+
+To add a contact to the address book, call `addContact(contact)`
+
+Below is an example:
+
+```python
+myAddressBook = AddressBook()
+
+newContact = BookRecord("John Doe")
+
+myAddressBook.addContact(newContact)
+```
+
+### Saving/Loading your address book
 To save your address book, call `save(filePath)`
 
 ```python
