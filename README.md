@@ -11,8 +11,7 @@ myAddressBook = AddressBook()
 ### Creating contacts
 The `BookRecord` class stores all the contact information.
 
-> [!IMPORTANT]
-> The contact's full name is required to initialize the class itself.
+It is called as `BookRecord(ContactName)`
 
 ```python
 myContact = BookRecord("John Doe")
