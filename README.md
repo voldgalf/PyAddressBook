@@ -18,7 +18,7 @@ pip install pyaddressbook
 myAddressBook = AddressBook()
 
 # Create a BookContact instance
-myContact = BookContact("John Doe")
+myContact = AddressContact("John Doe")
 
 # Add information to BookContact instance
 myContact.addInformation("Address", "123 Main Street")
